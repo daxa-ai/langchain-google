@@ -15,7 +15,7 @@ from langchain_core.document_loaders import BaseLoader
 from langchain_core.documents import Document
 from pydantic import BaseModel, field_validator, model_validator
 
-SCOPES = ["https://www.googleapis.com/auth/drive.file"]
+SCOPES = ["https://www.googleapis.com/auth/drive.readonly"]
 
 
 class GoogleDriveLoader(BaseLoader, BaseModel):
